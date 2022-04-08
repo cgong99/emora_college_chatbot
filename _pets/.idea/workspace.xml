@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2895f25c-474f-4a09-81b0-cbb4a087c4a4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="274SnNFFJzr2voDcGwAs1FOjGTC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.testdb">
+    <configuration name="pets_tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="_pets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pets_tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="testdb" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="_pets" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testdb.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.testdb" />
+        <item itemvalue="Python.pets_tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2895f25c-474f-4a09-81b0-cbb4a087c4a4" name="Default Changelist" comment="" />
+      <created>1648578030814</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648578030814</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1515" height="252" key="GridCell.Tab.0.bottom" timestamp="1648668661609">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="252" key="GridCell.Tab.0.bottom/0.25.1536.935@0.25.1536.935" timestamp="1648668661609" />
+    <state width="1515" height="252" key="GridCell.Tab.0.center" timestamp="1648668661608">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="252" key="GridCell.Tab.0.center/0.25.1536.935@0.25.1536.935" timestamp="1648668661608" />
+    <state width="1515" height="252" key="GridCell.Tab.0.left" timestamp="1648668661608">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="252" key="GridCell.Tab.0.left/0.25.1536.935@0.25.1536.935" timestamp="1648668661608" />
+    <state width="1515" height="252" key="GridCell.Tab.0.right" timestamp="1648668661608">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="252" key="GridCell.Tab.0.right/0.25.1536.935@0.25.1536.935" timestamp="1648668661608" />
+    <state width="1515" height="65" key="GridCell.Tab.1.bottom" timestamp="1648579110707">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="65" key="GridCell.Tab.1.bottom/0.25.1536.935@0.25.1536.935" timestamp="1648579110707" />
+    <state width="1515" height="65" key="GridCell.Tab.1.center" timestamp="1648579110707">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="65" key="GridCell.Tab.1.center/0.25.1536.935@0.25.1536.935" timestamp="1648579110707" />
+    <state width="1515" height="65" key="GridCell.Tab.1.left" timestamp="1648579110707">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="65" key="GridCell.Tab.1.left/0.25.1536.935@0.25.1536.935" timestamp="1648579110707" />
+    <state width="1515" height="65" key="GridCell.Tab.1.right" timestamp="1648579110707">
+      <screen x="0" y="25" width="1536" height="935" />
+    </state>
+    <state width="1515" height="65" key="GridCell.Tab.1.right/0.25.1536.935@0.25.1536.935" timestamp="1648579110707" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets.py</url>
+          <line>560</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets.py</url>
+          <line>299</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pets.py</url>
+          <line>582</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
