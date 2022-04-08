@@ -1,0 +1,8 @@
+{
+  "state": "Housing-Rates",
+  "Looks like you want to know the housing rates. Sure, we have 8 residence hall for first year students. Which one do you want to know?":{
+    "[$hall = #CATCH_HALL()]": {
+      "#GET_HALL_RATES()": "restart"
+    }
+  }
+}
