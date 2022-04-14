@@ -8,19 +8,30 @@ from marco import *
 
 macros = {
   "CATCH_HALLS": CATCH_HALL(),
-  "GENERATE_HALL_RESPONSE": GENERATE_HALL_RESPONSE()
+  "GENERATE_HALL_RESPONSE": GENERATE_HALL_RESPONSE(),
+  "GET_ROOM_TYPE": GET_ROOM_TYPE(),
+  "GET_RATES": GET_RATES()
 }
 
-chatbot = DialogueFlow('Housing-Rates', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros={"Topic": macros()})
-transitions = {
-  "state": "Housing-Rates",
-  "Looks like you want to know the housing rates. Sure, we have 8 residence hall\
-  for first year students. Which one do you want to know?":{
-    "[$hall = #CATCH_HALLS()]": {
-      "#GET_HALL_RATES()": "restart"
+chatbot = DialogueFlow('rates', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
+ask_rates = {
+  "state": 'rates',
+  '"Looks like you want to know the housing rates. Sure, we have 4 different room types: \n Single\n Double \n Triple\n Super Single\n\
+  Which one do you want to know about?"':{
+    "[$room=#GET_ROOM_TYPE()]": {
+      '"The rate for" $room "room would be" #GET_RATES(room) "dollars per semester."': {
+        "error": 'rates'
+      }
+    },
+    'error' : {
+      '"Sorry I don\'t quite understand that."' : "end"
     }
   }
-
 }
-chatbot.load_transitions(transitions)
+
+
+
+
+chatbot.load_transitions(ask_rates)
 chatbot.run(debugging=False)
+

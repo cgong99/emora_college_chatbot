@@ -9,6 +9,14 @@ rates = {
 }
 
 housing_options_phrase = {"options", "dorms", "residence hall"}
+rates_info = {
+  'double' : '4,835',
+  'single' : '5,301',
+  'triple' : '4,658',
+  'super single' : '6,370'
+}
+
+
 
 class CATCH_HALL_OPTIONS(Macro):
   def __init__(self):
@@ -16,6 +24,8 @@ class CATCH_HALL_OPTIONS(Macro):
   
   def run(self, ngrams, vars, args):
     pass
+
+
 
 class CATCH_HALL(Macro):
   def __init__(self):
@@ -34,8 +44,39 @@ class CATCH_HALL(Macro):
             return hall_name
           
       return ngrams & self.halls
+
+
+class GET_ROOM_TYPE(Macro):
+  def __init__(self):
+    print("****** initialize GET ROOM TYPE ******")
+    self.room_types = set(rates_info.keys()) 
+  
+  def run(self, ngrams, vars, args):
+    print('**** GEt Room *****')
+    # print(vars)
+    # print("\n")
+    # print(args)
+    print(ngrams & self.room_types)
+    return ngrams & self.room_types
+
+
+
+class GET_RATES(Macro):
+  def __init__(self):
+    self.rates = rates_info
+  
+  def run(self, ngrams, vars, args):
+    print('**** GET Rates *****')
+
+    room = vars[args[0]]
+    print(room)
+    print(self.rates[room])
+    return self.rates[room]
+
     
-    
+
+
+
 class GENERATE_HALL_RESPONSE(Macro):
   def __init__(self):
       """Inits CATCH with list"""
@@ -47,6 +88,7 @@ class GENERATE_HALL_RESPONSE(Macro):
       rate = rates[vars[args[0]]]
       return rate
     
+
 
 class AMENITIES(Macro):
   # generate amenities response to each specific hall
