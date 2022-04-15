@@ -1,5 +1,6 @@
 # state for each of the residence hall?
 from emora_stdm import DialogueFlow, Macro
+import json
 
 hall_names = {"alabama", "complex", "eagle", 
               "hamilton holmes", "raoul", "turman", "dobbs", "haris"}
@@ -69,8 +70,6 @@ class GET_RATES(Macro):
     print('**** GET Rates *****')
 
     room = vars[args[0]]
-    print(room)
-    print(self.rates[room])
     return self.rates[room]
 
     
@@ -87,7 +86,76 @@ class GENERATE_HALL_RESPONSE(Macro):
       res = "\n"
       rate = rates[vars[args[0]]]
       return rate
+
+
+class RETURN_HALL_LIST(Macro):
+  def __init__(self):
+      self.halls = hall_names
+
+  def run(self, ngrams, vars, args):
+    res = ""
+    for name in self.halls:
+      res = res + "\n" + name + " hall"
+    return res
     
+
+
+
+class LOCATION(Macro):
+  def __init__(self, path):
+    print("****location init*****")
+    self.path = path
+    with open(self.path, 'r') as f:
+      self.db = json.load(f)
+
+  def run(self, ngrams, vars, args):
+    # input hall name
+    print("***enterred location ****")
+    print(args[0])
+    print(vars[args[0]])
+
+    location = self.db[vars[args[0]]]['Location']
+    return location
+
+
+class CONTACT_HALL(Macro):
+  def __init__(self, path):
+    self.path = path
+    with open(self.path, 'r') as f:
+      self.db = json.load(f)
+
+  def run(self, ngrams, vars, args):
+    # input hall name
+    print("*** CONTACT ****")
+    hall = vars[args[0]]
+    staff = self.db[hall]['Staff']
+    staff_name = list(staff.keys())[0]
+    title = staff[staff_name]['title']
+    email = staff[staff_name]['email']
+    res = "Here is the contact information of " + staff_name + ", " + title +"\nemail: "+email
+    return res
+
+
+class FLOOR_PLAN(Macro):
+  def __init__(self, path):
+    self.path = path
+    with open(self.path, 'r') as f:
+      self.db = json.load(f)
+
+  def run(self, ngrams, vars, args):
+    # input hall name
+    print("*** FLOORPLAN ****")
+    hall_name = vars[args[0]]
+    hall = self.db[hall_name]
+    print(hall_name)
+    all_link = hall["Floor Plan Link"]
+    res = "Here are the links to different floor plans of "+ hall_name +":\n"
+    for type in all_link.keys():
+      res = res + "\n"+ type + ": " + all_link[type]
+      print(res)
+
+    return "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_single_std.pdf"
+
 
 
 class AMENITIES(Macro):

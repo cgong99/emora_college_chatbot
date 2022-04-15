@@ -1,0 +1,196 @@
+{
+  "alabama": {
+    "rooms": "TV",
+    "floor": "Gender: single",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines ",
+      "lounges": "TV lounge, parlor w/ piano on 2nd floor",
+      "laundry": "Laundry facilities on 1st and 5th floor",
+      "internet": "Wireless"
+    },
+    "Location": "575 ASBURY CIRCLE, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Single Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_single_std.pdf",
+      "Double Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_double_std.pdf",
+      "Double Suite Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_double_suite.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/Harris%20Floor%20Plan.pdf"
+    },
+    "Staff": {
+      "Cedric Blatch": {
+        "title": "Complex Director - Alabama and Dobbs Halls",
+        "email": "cedric.alonzo.blatch@emory.edu"
+      }
+    }
+  },
+  "complex": {
+    "rooms": "TV",
+    "floor": "Gender: single",
+    "hall ": {
+      "kitchen": "Community kitchen on ground floor",
+      "lounges": "TV lounge w/ pool table, parlor ",
+      "laundry": "laundry facilities in Smith (Ground) and Thomas (1st)",
+      "internet": "Wireless"
+    },
+    "Location": "1310 CLIFTON ROAD, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Double Room Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_hopkins-doubles.jpg",
+      "Smith Floor Plan": {
+        "1st Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_smith1.gif",
+        "2nd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_smith2.gif",
+        "3rd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_smith3.gif",
+        "4th Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_smith4.gif"
+      },
+      "Thomas Floor Plan": {
+        "1st Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_thomas1.gif",
+        "2nd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_thomas2.gif",
+        "3rd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_thomas3.gif",
+        "4th Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_thomas4.gif"
+      },
+      "Hopkins Floor Plan": {
+        "1st Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_hopkins1.gif",
+        "2nd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_hopkins2.gif",
+        "3rd Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_hopkins3.gif",
+        "4th Floor": "https://housing.emory.edu/_includes/documents/housing-options/halls/complex_floor_hopkins4.gif"
+      }
+    },
+    "Staff": {
+      "Jake Horvath": {
+        "email": "jake.horvath@emory.edu",
+        "title": "Complex Director - Hopkins, Smith, and Thomas Halls (Complex)"
+      }
+    }
+  },
+  "eagle": {
+    "rooms": "TV",
+    "floor": "Gender: Mixed",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines ",
+      "lounges": "Common room w/ TV & fireplace, international student lounge",
+      "laundry": "Laundry facilities on 1st floor",
+      "internet": "Wireless"
+    },
+    "Location": "646 MEANS DRIVE, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Double Suite Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/Freshman4_Bedrooms%20DOUBLE.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/long_means_building.pdf"
+    },
+    "Staff": {
+      "Chelsea Appiah": {
+        "title": "Complex Director - Eagle Hall",
+        "email": "chelsea.korankye.appiah@emory.edu"
+      }
+    }
+  },
+  "hamilton": {
+    "rooms": "TV",
+    "floor": "Gender: Mixed",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines ",
+      "lounges": "TV lounge on ground floor",
+      "laundry": "Laundry facilities on ground floor",
+      "internet": "Wireless"
+    },
+    "Location": "623 PIERCE PROMENADE, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Double Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/holmes_furn_dbl.pdf",
+      "Suite Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/holmes_furn_suite.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/hholmes_building.pdf"
+    },
+    "Staff": {
+      "Taylor Bischoff": {
+        "title": "Complex Director - Hamilton Holmes and Turman Halls",
+        "email": "taylor.bischoff@emory.edu"
+      }
+    }
+  },
+  "raoul": {
+    "rooms": "TV",
+    "floor": "Gender: Mixed",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines on Ground & 1st Floor",
+      "lounges": "Common room w/ TV on Ground & 1st floor",
+      "laundry": "Laundry facilities on Ground and 1st floor",
+      "internet": "Wireless"
+    },
+    "Location": "2 EAGLE ROW, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Single Room Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/raoul_single.pdf",
+      "Double Room Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/raoul_double.pdf",
+      "Double Suite (1) Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/raoul_supersuite1.pdf",
+      "Double Suite (2) Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/raoul_supersuite2.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/raoul_building.pdf"
+    },
+    "Staff": {
+      "Tyler Vernon": {
+        "title": "Interim Complex Director - Raoul Hall",
+        "email": "tyler.vernon@emory.edu"
+      }
+    }
+  },
+  "turman": {
+    "rooms": "TV",
+    "floor": "Gender: grouped",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines on Ground & 1st Floor",
+      "lounges": "TV lounge on ground floor",
+      "laundry": "Laundry facilities on Ground floor",
+      "internet": "Wireless"
+    },
+    "Location": "640 MEANS DRIVE, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Single Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/turman_new_furnsingle.pdf",
+      "Double Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/turman_new_furndoub.pdf",
+      "Building Floor Plan": "Building Floor Plan"
+    },
+    "Staff": {
+      "Taylor Bischoff": {
+        "email": "taylor.bischoff@emory.edu",
+        "title": "Complex Director - Hamilton Holmes and Turman Halls"
+      }
+    }
+  },
+  "dobbs": {
+    "rooms": "TV",
+    "floor": "Gender:grouped/single",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines on Ground & 1st Floor",
+      "lounges": "TV & study lounge on 3rd floor and courtyard",
+      "laundry": "Facilities on 2nd floor",
+      "internet": "Wireless"
+    },
+    "Location": "586 ASBURY CIRCLE, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Double Room Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/dobbs_furn_double.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/dobbs_building.pdf"
+    },
+    "Staff": {
+      "Cedric Blatch": {
+        "title": "Complex Director - Alabama and Dobbs Halls",
+        "email": "cedric.alonzo.blatch@emory.edu"
+      }
+    }
+  },
+  "harris": {
+    "rooms": "TV",
+    "floor": "Gender: Mixed",
+    "hall ": {
+      "kitchen": "Community kitchen w/ vending machines ",
+      "lounges": "TV lounge, parlor w/ piano on 2nd floor",
+      "laundry": "Laundry facilities on 1st and 5th floor",
+      "internet": "Wireless"
+    },
+    "Location": "1340 CLIFTON ROAD, ATLANTA, GA 30322",
+    "Floor Plan Link": {
+      "Single Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_single_std.pdf",
+      "Double Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_double_std.pdf",
+      "Double Suite Floor Plan": "https://housing.emory.edu/_includes/documents/housing-options/halls/harris_double_suite.pdf",
+      "Building Floor Plan": "https://housing.emory.edu/_includes/documents/Harris%20Floor%20Plan.pdf"
+    },
+    "Staff": {
+      "Daniela Mu\u00f1oz Wilson": {
+        "title": "Complex Director - Harris Hall",
+        "email": "daniela.munozrogers@emory.edu"
+      }
+    }
+  }
+}

@@ -5,13 +5,18 @@ from marco import *
 
 
 
+# single flow
+housing_info_path = "housing_info.json"
 
 macros = {
   "CATCH_HALLS": CATCH_HALL(),
   "GENERATE_HALL_RESPONSE": GENERATE_HALL_RESPONSE(),
   "GET_ROOM_TYPE": GET_ROOM_TYPE(),
-  "GET_RATES": GET_RATES()
+  "GET_RATES": GET_RATES(),
+  "RETURN_HALL_LIST": RETURN_HALL_LIST(),
+  "LOCATION": LOCATION(housing_info_path)
 }
+
 
 
 ask_rates = {
@@ -29,10 +34,25 @@ ask_rates = {
   }
 }
 
+intro_hall = {
+  "state": 'intro_hall',
+  '"What do you want to know more about?"':{
+    '[{where, location}]':{
+      '"Here is the location: " #LOCATION(preferred_hall)\n What else can I help you?': 'end'
+    },
+    '[{contact, contacts, number}]':{
+      '#CONTACT_HALL(preferred_hall)':'end'
+    },
 
+    'error': {
+      '"Sorry I don\'t know about this information."' : 'intro_hall'
+    }
+  }
+}
 
 if __name__ == '__main__':
-  chatbot = DialogueFlow('rates', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
-  chatbot.load_transitions(ask_rates)
+
+  chatbot = DialogueFlow('intro_hall', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
+  chatbot.load_transitions(intro_hall)
   chatbot.run(debugging=False)
 

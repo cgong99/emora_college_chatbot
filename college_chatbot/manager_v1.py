@@ -11,12 +11,14 @@ from transitions import *
 
 
 # single flow
+housing_info_path = "housing_info.json"
 
 class State():
   START = "start"
   RATES = "rates"
   HOUSING_GENERALL = 1
   HALL_OPTIONS = "housing_options"
+  INTRO_HALLS = "intro_hall"
   HOUSING_HALL = 3
   HALL_OPTIONS_ANSWER = 4
 
@@ -27,7 +29,11 @@ macros = {
   "CATCH_HALLS": CATCH_HALL(),
   "GENERATE_HALL_RESPONSE": GENERATE_HALL_RESPONSE(),
   "GET_ROOM_TYPE": GET_ROOM_TYPE(),
-  "GET_RATES": GET_RATES()
+  "GET_RATES": GET_RATES(),
+  "RETURN_HALL_LIST": RETURN_HALL_LIST(),
+  "LOCATION": LOCATION(housing_info_path),
+  "CONTACT_HALL": CONTACT_HALL(housing_info_path),
+  "FLOOR_PLAN": FLOOR_PLAN(housing_info_path)
 }
 
 df = DialogueFlow(State.START, initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
@@ -55,10 +61,11 @@ df.add_system_transition(State.START, State.START, standard_opening)
 
 
 # USER HALL OPTIONS
-df.add_user_transition(State.START, "housing_options", '[what, {housing, options}]')
+df.add_user_transition(State.START, State.HALL_OPTIONS, '[what, {housing, options}]')
 # rates question
-df.add_user_transition(State.START, "rates", '[{rates, fee, cost}]')
-#
+df.add_user_transition(State.START, State.RATES, '[{rates, fee, cost}]')
+# specific hall
+df.add_user_transition(State.START, State.INTRO_HALLS, '$preferred_hall=#CATCH_HALLS()')
 
 
 
@@ -70,7 +77,7 @@ df.add_user_transition(State.START, "rates", '[{rates, fee, cost}]')
 # residenthall state
 
 # USER CATCH PREFERRED HALL
-df.add_user_transition(State.HALL_OPTIONS_ANSWER, State.HALL_OPTIONS_ANSWER, '[$preferred_hall=#CATCH_HALLS()]')
+# df.add_user_transition(State.HALL_OPTIONS_ANSWER, State.HALL_OPTIONS_ANSWER, '[$preferred_hall=#CATCH_HALLS()]')
 
 # go to each housing branch. or pass hall as a variable
 
@@ -81,7 +88,8 @@ if __name__ == '__main__':
     df.check()
     df.precache_transitions()
     df.load_transitions(ask_rates)
-    df.load_transitions(intro_hall)
     df.load_transitions(housing_options)
+    df.load_transitions(intro_hall)
+    # df.load_transitions(transitions)
     # run the DialogueFlow in interactive mode to test
     df.run(debugging=False)
