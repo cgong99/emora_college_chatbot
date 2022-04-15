@@ -35,9 +35,11 @@ macros = {
 }
 
 df = DialogueFlow(State.START, initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
-# how to use knowledgeBase?
-# knowledge = KnowledgeBase()
-# knowledge.load_json_file(OPENINGDIR.replace('__***__','opening_database.json'))
+
+
+
+# preferred hall
+# 
 
 
 standard_opening = '"Hi this is Emory Housing. How can I help you?" #SET($preferred_hall=None)'
@@ -45,8 +47,20 @@ standard_opening = '"Hi this is Emory Housing. How can I help you?" #SET($prefer
 # START
 df.add_system_transition(State.START, State.START, standard_opening)
 
-# USER HALL OPTIONS
+
+# USER QUESTIONS
+# 1. asking hall optinos
 df.add_user_transition(State.START, State.HALL_OPTIONS, '[what, {housing, options}]')
+# 2. housing rates/ costs/ fee/ .....
+# 3. Date ddl
+# 4. Application
+# 5. Contacts
+# 6. Hall amenities
+# 7. Room amenities/ Floor plan
+
+
+
+
 
 df.add_system_transition(State.HALL_OPTIONS, State.HALL_OPTIONS_ANSWER, "There are 8 residence halls for first year students. #GENERATE_HALL_RESPONSE()")
 # residenthall state
