@@ -13,7 +13,7 @@ macros = {
   "GET_RATES": GET_RATES()
 }
 
-chatbot = DialogueFlow('rates', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
+
 ask_rates = {
   "state": 'rates',
   '"Looks like you want to know the housing rates. Sure, we have 4 different room types: \n Single\n Double \n Triple\n Super Single\n\
@@ -30,8 +30,10 @@ ask_rates = {
 }
 
 
+if __name__ == '__main__':
+  chatbot = DialogueFlow('rates', initial_speaker=DialogueFlow.Speaker.SYSTEM, macros=macros)
+  chatbot.load_transitions(ask_rates)
+  chatbot.run(debugging=False)
 
-
-chatbot.load_transitions(ask_rates)
-chatbot.run(debugging=False)
+  
 
